@@ -241,5 +241,7 @@ console.log(document.querySelector());//not widely supported by all browser so r
 // JAVASCRIPT - UPDATE HTML ELEMENTS
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 console.log(' ');
-console.log('SELECT HTML ELEMENTS');
+console.log('UPDATE HTML ELEMENTS');
 console.log(' ');
+
+var countdownElem = document.getElementById('countdown')
