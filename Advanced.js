@@ -229,13 +229,13 @@ console.log(document.getElementsByTagName('h1'));
 // JAVASCRIPT - QUERY SELECTORS
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 console.log(' ');
-console.log('SELECT HTML ELEMENTS');
+console.log('Query Selectors');
 console.log(' ');
 
-//Helps to selct HTML elements
+//Helps to select HTML elements
 
 //querySelector() - accepts CSS selectors string, returns first HTML element matching query
-console.log(document.querySelector());//not widely supported by all browser so rather use getElement (which is also FASTER)
+//console.log(document.querySelector());//not widely supported by all browser so rather use getElement (which is also FASTER)
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // JAVASCRIPT - UPDATE HTML ELEMENTS
@@ -245,3 +245,22 @@ console.log('UPDATE HTML ELEMENTS');
 console.log(' ');
 
 var countdownElem = document.getElementById('countdown')
+countdownElem.style.color = 'white';
+
+var icValue = countdownElem.innerHTML; //returns "10"
+
+var imgSrc = document.getElementById("bg-image");
+
+console.log(imgSrc.src);
+
+setInterval(function() {
+    icValue = icValue > 0 ? icValue - 1: 0
+    countdownElem.innerHTML = icValue;
+    if (icValue%2 === 0) {
+        imgSrc.src = '/assets/1.png'
+        document.getElementById('countdown').style.color = 'white';
+    } else {
+        imgSrc.src = '/assets/2.png'
+        document.getElementById('countdown').style.color = 'black';
+    }
+}, 1000)

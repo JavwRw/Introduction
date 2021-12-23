@@ -3,12 +3,33 @@
     <head>
         <meta charset="UTF-8">
         <title>JavaScript Advanced</title>
+
+        <style>
+            .container {
+                position: relative;
+                text-align: center;
+                color: white;
+            }
+
+            #bg-image {
+                width: 1500px;
+                height: 750px;
+            }
+
+            #countdown {
+                position: absolute;
+                font-size: 60pt;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
     </head>
     <body>
         <!-- <h1 id="header">Javascript Advanced</h1> -->
 +       <header>
-            <div>
-                <img id="bg-image" src="/assets/1.png" alt="Background 1">
+            <div class="container">
+                <img id="bg-image" src="/assets/1.png" alt="Background 1" />
                 <h1 id="countdown">10</h1>
             </div>
         </header>
